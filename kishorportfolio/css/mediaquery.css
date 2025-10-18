@@ -109,6 +109,8 @@
     width: 100%;
   }
 
+
+
   .home-img {
     width: 100%;
   }
@@ -119,5 +121,26 @@
 
   .projects-row{
     padding: 0 2px;
+  }
+
+  
+.blog-detail {
+  width: 95%;
+  margin: auto;
+}
+
+ .blog-detail-body {
+  width: 95%;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.blog-detail-header {
+  width: 100%;
+  margin: auto;
+}
+
+.hobby-list {
+    grid-template-columns: 1fr;
   }
 }
