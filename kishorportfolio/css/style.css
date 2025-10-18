@@ -723,13 +723,11 @@ main {
 }
 
 .experience-desc h1 {
-  color: #2c3e50;
   font-size: 36px;
   margin-bottom: 20px;
 }
 
 .experience-desc p {
-  color: #7f8c8d;
   font-size: 18px;
   line-height: 1.6;
 }
@@ -825,7 +823,7 @@ main {
 /* blogs */
 
 .blogs {
-  width: 100%;
+  width: 90%;
   margin: auto;
   text-align: center;
 }
@@ -957,7 +955,7 @@ main {
 }
 
 .blog-detail-body {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding: 30px;
   border-radius: 10px;
@@ -1010,16 +1008,7 @@ main {
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .blog-detail-body {
-    padding: 20px;
-    margin: 0 10px;
-  }
 
-  .hobby-list {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* blog detail  ends */
 
@@ -1096,9 +1085,14 @@ i have used nth even child property from w3scchools which is not mentioned in ur
     flex-direction: column;
   }
 
+  .travel-item:nth-child(even) {
+  flex-direction:column;
+}
+
   .travel-image {
-    min-height: 300px;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
   }
 
   .travel-info {
