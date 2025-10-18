@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Journal - Kishor Shrestha</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaquery.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <nav class="nav-container">
+        <div class="top-menu">
+          <div class="nav-info">
+            <div class="nav-contact">
+              <div class="nav-contact-item">
+                <i class="fa fa-phone"></i>
+                <p>Call: 0412-168-040</p>
+              </div>
+              <div class="nav-contact-item">
+                <i class="fa fa-map-marker-alt"></i>
+                <p>Location: 12 East Street Granville, NSW</p>
+              </div>
+            </div>
+            <div class="navbar-light" style="cursor: pointer">
+              <span id="theme-toggle">
+                <i class="ri-sun-fill"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-menu">
+          <h1><a href="index.html">KISHOR SHRESTHA</a></h1>
+          <nav>
+            <ul id="navbar-center">
+              <div id="hidemenu"
+                ><i class="ri-xrp-line" onclick="hideMenu()"></i
+              ></div>
+              <li><a href="about.html">About</a></li>
+              <li class="dropdown">
+                <a href="#">Portfolio</a>
+                <div class="dropdown-content">
+                  <a href="education.html">Education</a>
+                  <a href="experience.html">Experience</a>
+                  <a href="skills.html">Skills</a>
+                  <a href="projects.html">Projects</a>
+                  <a href="resume.html">My Resume</a>
+                </div>
+              </li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div id="showmenu"
+            ><i class="ri-menu-line" onclick="showMenu()"></i
+          ></div>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <h4 class="heading">Journal</h4>
+        <p>HOME > Journal</p>
+      </div>
+
+      <section class="blogs">
+        <div class="blog-detail">
+          <div class="blog-detail-header">
+            <img src="images/journal.jpg" alt="My Development Journey" />
+            <div class="blog-detail-header-data">
+              <h5>
+                Posted by <strong>Kishor Shrestha</strong>
+              </h5>
+              <p>Published: October 2025</p>
+            </div>
+          </div>
+          <br>
+          
+          <div class="blog-detail-metadesc">
+            <div class="line"></div>
+            <h1>My Development Journey: From Learning to Building</h1>
+            <div class="line"></div>
+          </div>
+
+          <div class="blog-detail-body">
+            <div class="highlight-box">
+              <p>As I reflect on my journey through the world of software development, I'm reminded of how far I've come from my early days at Islington College to building complex web applications that solve real-world problems.</p>
+            </div>
+            
+            <h4><i class="ri-graduation-cap-line"></i> The Foundation Years</h4>
+            <p>My journey in technology began during my BSC (Hons) Computing studies at Islington College from 2021 to 2023. Those years were transformative - learning not just the syntax of programming languages, but the fundamental principles of software architecture, database design, and user experience. The theoretical knowledge combined with practical projects laid the groundwork for my professional career.</p>
+            
+            <p>I remember spending countless hours in the computer labs, debugging code and collaborating with classmates on group projects. Those late nights taught me more than just programming - they taught me perseverance, problem-solving, and the importance of clean, maintainable code.</p>
+            
+            <div class="hobby-list">
+              <div class="hobby-item">
+                <i class="ri-book-line"></i>
+                <h5>Academic Learning</h5>
+                <p>Building strong theoretical foundations</p>
+              </div>
+              <div class="hobby-item">
+                <i class="ri-team-line"></i>
+                <h5>Collaboration</h5>
+                <p>Working on team projects and code reviews</p>
+              </div>
+              <div class="hobby-item">
+                <i class="ri-bug-line"></i>
+                <h5>Problem Solving</h5>
+                <p>Debugging and optimizing solutions</p>
+              </div>
+            </div>
+            
+            <h4><i class="ri-briefcase-line"></i> Professional Growth</h4>
+            <p>My internship at Complete Corporate Solution and subsequent role as a Web Developer at Quad Tech marked significant milestones in my professional development. Working on real client projects taught me the importance of understanding business requirements, meeting deadlines, and maintaining code quality in production environments.</p>
+            
+            <p>At Quad Tech, I had the opportunity to contribute to a client-based e-commerce website, taking charge of backend development using Django and SQLite databases. This experience taught me how to balance technical requirements with business needs, and how to work effectively in cross-functional teams.</p>
+            
+            <div class="quote-section">
+              <div class="quote-text">"Every line of code tells a story, every project teaches a lesson, and every challenge overcome builds confidence for the next."</div>
+              <div class="quote-author">- Kishor Shrestha</div>
+            </div>
+            
+            <h4><i class="ri-projector-line"></i> Project Evolution</h4>
+            <p>Looking back at my project portfolio, I can see clear progression in complexity and sophistication. From the Family Resort e-commerce platform to the Note App built with React and Django REST Framework, each project represents a step forward in my technical abilities.</p>
+            
+            <p>The Complete Authentication Restful API project was particularly challenging - implementing JWT token authentication with access and refresh tokens, along with email login functionality for Django panels. This project pushed me to understand security principles and API design patterns at a deeper level.</p>
+            
+            <div class="hobby-list">
+              <div class="hobby-item">
+                <i class="ri-shopping-cart-line"></i>
+                <h5>E-commerce Systems</h5>
+                <p>Building complete shopping experiences</p>
+              </div>
+              <div class="hobby-item">
+                <i class="ri-shield-keyhole-line"></i>
+                <h5>Security</h5>
+                <p>Implementing authentication systems</p>
+              </div>
+              <div class="hobby-item">
+                <i class="ri-tools-line"></i>
+                <h5>Full-Stack Development</h5>
+                <p>Frontend and backend integration</p>
+              </div>
+            </div>
+            
+            <h4><i class="ri-lightbulb-line"></i> Current Focus and Future Vision</h4>
+            <p>Currently, I'm deepening my expertise in React patterns and Django REST Framework, exploring ways to build more scalable and maintainable applications. The tech industry moves rapidly, and staying current requires continuous learning and adaptation.</p>
+            
+            <p>My goal is to continue pushing the boundaries of web development, contributing to impactful projects that shape the digital landscape. I believe that great software isn't just about clean code - it's about creating solutions that genuinely improve people's lives and experiences.</p>
+            
+            <div class="highlight-box">
+              <p><em>Looking ahead, I'm excited to continue this journey of growth and innovation. The challenges ahead are opportunities in disguise, and I'm ready to embrace them with the same passion and dedication that has brought me this far.</em></p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+
+     <footer class="footer" id="footer">
+      <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-about">
+          <div class="footer-logo">
+            <h2>KISHOR SHRESTHA</h2>
+          </div>
+          <p>
+            I'm Kishor Shrestha, a full-stack developer with strong
+            communication skills and a people-first mindset.
+          </p>
+
+          <h3>Follow On</h3>
+          <div class="home-detail-icon" style="justify-content: center">
+            <a href="https://www.facebook.com/kishor.stha.144"
+              ><i class="ri-facebook-fill"></i
+            ></a>
+            <a href="https://www.instagram.com/kishor_stha_/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://github.com/keyshor1"
+              ><i class="ri-github-fill"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/kishor-shrestha-089491268"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-links">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>
+              <i class="ri-mail-line"></i>
+              <a href="mailto:kishorshrestha2059@gmail.com"
+                >kishorshrestha2059@gmail.com</a
+              >
+            </li>
+            <li><i class="ri-map-pin-line"></i> Granville, East Street</li>
+            <li>
+              <i class="ri-phone-line"></i> 0412168040
+            </li>
+          </ul>
+        </div>
+
+        <!-- Our Services -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="termsandcondition.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="footer-bottom">
+        <p>© 2025 <span>Kishor Shrestha</span>. All rights reserved.</p>
+        <p>
+          <a href="termsandcondition.html">Terms of Service</a> | Privacy Policy
+        </p>
+      </div>
+    </footer>
+    
+    <!-- js code  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

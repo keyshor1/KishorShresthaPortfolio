@@ -1,0 +1,123 @@
+/* i used the media query to make responsive when open on small device and i have learned it from   https://engineering.kablamo.com.au/posts/media-queries-and-responsive-design/index.html  */
+
+:root {
+  /* Light Mode Colors */
+  --bg-color: #ffff;
+  --text-color: #121212;
+  --banner-color: #dfdfe578;
+  --primary--color: linear-gradient(135deg, #9b30ff, #bf00ff);
+  --secondary-color: linear-gradient(135deg, #9b30ff, #dfdfe578);
+  --purple--color: #9b30ff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #0d0d0d;
+  --text-color: #ffff;
+  --banner-color: #1a1a1b78;
+  --primary--color: linear-gradient(135deg, #9b30ff, #bf00ff);
+  --secondary-color: linear-gradient(135deg, #9b30ff, #1a1a1b78);
+  --purple--color: #9b30ff;
+}
+
+#showmenu {
+  display: none;
+}
+
+#hidemenu {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  #showmenu {
+    display: block;
+    font-size: 30px;
+  }
+
+  #hidemenu {
+    display: block;
+    font-size: 30px;
+  }
+
+  .about-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+  .about-col {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bottom-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .bottom-menu h1 a{
+    font-size: 23px;
+  }
+
+
+
+  .bottom-menu nav ul {
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    background: var(--secondary-color);
+    top: 140px;
+    opacity: 0;
+    z-index: 1;
+    width: 200px;
+    height: fit-content;
+  }
+
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: -240px;
+    background: var(--secondary-color);
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px var(--text-color);
+    opacity: 0;
+    border-radius: 5px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    opacity: 1;
+  }
+
+  .navbar-light{
+    margin-right: 20px;
+  }
+
+  .top-menu .nav-contact-item p{
+    font-size: 12px;
+  }
+
+  #home {
+    flex-direction: column;
+  }
+
+  #home .home-content {
+    width: 100%;
+  }
+
+  .home-img {
+    width: 100%;
+  }
+
+  .home-content-bottom-col {
+    flex: 1 0 100%;
+  }
+
+  .projects-row{
+    padding: 0 2px;
+  }
+}

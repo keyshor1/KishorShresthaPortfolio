@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Make Web Application</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaquery.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <nav class="nav-container">
+        <div class="top-menu">
+          <div class="nav-info">
+            <div class="nav-contact">
+              <div class="nav-contact-item">
+                <i class="fa fa-phone"></i>
+                <p>Call: 0412-168-040</p>
+              </div>
+              <div class="nav-contact-item">
+                <i class="fa fa-map-marker-alt"></i>
+                <p>Location: 12 East Street Granville, NSW</p>
+              </div>
+            </div>
+            <div class="navbar-light" style="cursor: pointer">
+              <span id="theme-toggle">
+                <i class="ri-sun-fill"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-menu">
+          <h1><a href="index.html">KISHOR SHRESTHA</a></h1>
+          <nav>
+            <ul id="navbar-center">
+              <div id="hidemenu"
+                ><i class="ri-xrp-line" onclick="hideMenu()"></i
+              ></div>
+              <li><a href="about.html">About</a></li>
+              <li class="dropdown">
+                <a href="#">Portfolio</a>
+                <div class="dropdown-content">
+                  <a href="education.html">Education</a>
+                  <a href="experience.html">Experience</a>
+                  <a href="skills.html">Skills</a>
+                  <a href="projects.html">Projects</a>
+                  <a href="resume.html">My Resume</a>
+                </div>
+              </li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div id="showmenu"
+            ><i class="ri-menu-line" onclick="showMenu()"></i
+          ></div>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <h4 class="heading">How to make Web Application</h4>
+        <p>HOME > HOW TO MAKE WEB APPLICATION</p>
+      </div>
+
+      <section class="blogs">
+        <div class="blog-detail">
+          <div class="blog-detail-header">
+            <img src="images/webroadmap.jpg" alt="Web Application Development" />
+            <div class="blog-detail-header-data">
+              <h5>
+                Posted by <strong>Kishor Shrestha</strong>
+              </h5>
+              <p>Published: October 2025</p>
+            </div>
+          </div>
+          <br>
+          
+          <div class="blog-detail-metadesc">
+            <div class="line"></div>
+            <h1>How to Build a Modern Web Application: A Step-by-Step Guide</h1>
+            <div class="line"></div>
+          </div>
+
+          <div class="blog-detail-body">
+            <div class="highlight-box">
+              <p>Building a web application can seem daunting, but with the right approach and tools, anyone can create powerful, scalable applications. In this guide, I'll walk you through the complete process of building a modern web application from concept to deployment.</p>
+            </div>
+            
+            <h4><i class="ri-lightbulb-line"></i> Planning and Requirements</h4>
+            <p>Every successful web application starts with thorough planning. Before writing a single line of code, you need to define your application's purpose, target audience, and core features. This phase involves creating user stories, wireframes, and a detailed project specification.</p>
+            
+            <p>During my projects like Family Resort and Food Hunger, I learned that proper planning saves countless hours of development time. Create a clear roadmap that outlines your application's architecture, database design, and user flow before moving to implementation.</p>
+            
+            <div class="hobby-list">
+              <div class="hobby-item">
+                <i class="ri-file-list-line"></i>
+                <h5>Requirements</h5>
+                <p>Define features and user stories</p>
+              </div>
+              <div class="hobby-item">
+                <i class="ri-layout-line"></i>
+                <h5>Wireframing</h5>
+                <p>Create UI mockups and layouts</p>
+              </div>
+              <div class="hobby-item">
+                <i class="ri-database-2-line"></i>
+                <h5>Database Design</h5>
+                <p>Plan data structure and relationships</p>
+              </div>
+            </div>
+            
+            <h4><i class="ri-code-line"></i> Choosing the Right Technology Stack</h4>
+            <p>Selecting the appropriate technologies is crucial for your application's success. For most web applications, you'll need a frontend framework, backend framework, and database. Based on my experience, I recommend Django for backend development due to its robustness and React for frontend for its flexibility.</p>
+            
+            <p>The technology stack should align with your project requirements, team expertise, and scalability needs. Consider factors like development speed, community support, and long-term maintenance when making your choices.</p>
+            
+            <div class="quote-section">
+              <div class="quote-text">"Choose technologies that solve your specific problems, not just the ones that are currently popular. The right tool for the right job always wins in the long run."</div>
+              <div class="quote-author">- Kishor Shrestha</div>
+            </div>
+            
+            <h4><i class="ri-server-line"></i> Backend Development with Django</h4>
+            <p>Django provides a solid foundation for building secure and scalable web applications. Start by setting up your project structure, defining models for your database, creating views and URLs, and implementing authentication systems.</p>
+            
+            <p>In my authentication API project, I implemented JWT tokens for secure user sessions. Django's built-in admin interface, ORM for database operations, and security features make it an excellent choice for rapid development without compromising on quality.</p>
+            
+            <div class="hobby-list">
+              <div class="hobby-item">
+                <i class="ri-shield-keyhole-line"></i>
+                <h5>Authentication</h5>
+                <p>Implement secure user login systems</p>
+              </div>
+              <div class="hobby-item">
+                <i class="ri-database-2-line"></i>
+                <h5>Database Models</h5>
+                <p>Design and create data structures</p>
+              </div>
+              <div class="hobby-item">
+                <i class="ri-restaurant-line"></i>
+                <h5>API Development</h5>
+                <p>Create RESTful endpoints for data</p>
+              </div>
+            </div>
+            
+            <h4><i class="ri-palette-line"></i> Frontend Development with React</h4>
+            <p>The frontend is what users interact with, so it needs to be intuitive and responsive. React's component-based architecture allows you to build reusable UI elements and manage application state efficiently.</p>
+            
+            <p>When building the Note Taking App, I focused on creating a clean, responsive interface that works seamlessly across different devices. Use modern CSS frameworks and ensure your design is accessible to all users.</p>
+            
+            <div class="hobby-list">
+              <div class="hobby-item">
+                <i class="ri-layout-5-line"></i>
+                <h5>Component Design</h5>
+                <p>Create reusable UI components</p>
+              </div>
+              <div class="hobby-item">
+                <i class="ri-smartphone-line"></i>
+                <h5>Responsive Design</h5>
+                <p>Ensure mobile compatibility</p>
+              </div>
+              <div class="hobby-item">
+                <i class="ri-user-voice-line"></i>
+                <h5>User Experience</h5>
+                <p>Focus on intuitive interactions</p>
+              </div>
+            </div>
+            
+            <h4><i class="ri-plug-line"></i> Integration and Testing</h4>
+            <p>Connecting your frontend and backend is a critical step. Use APIs to facilitate communication between the two layers. Implement comprehensive testing to catch bugs early and ensure your application works as expected.</p>
+            
+            <p>Testing should cover unit tests for individual components, integration tests for API endpoints, and end-to-end tests for complete user workflows. Automated testing saves time and improves code quality in the long run.</p>
+            
+            <div class="hobby-list">
+              <div class="hobby-item">
+                <i class="ri-bug-line"></i>
+                <h5>Testing</h5>
+                <p>Implement comprehensive test suites</p>
+              </div>
+              <div class="hobby-item">
+                <i class="ri-link-m"></i>
+                <h5>API Integration</h5>
+                <p>Connect frontend and backend</p>
+              </div>
+              <div class="hobby-item">
+                <i class="ri-shield-check-line"></i>
+                <h5>Security</h5>
+                <p>Implement security best practices</p>
+              </div>
+            </div>
+            
+            <h4><i class="ri-rocket-line"></i> Deployment and Maintenance</h4>
+            <p>Deploying your application makes it accessible to users. Choose a hosting provider that meets your needs in terms of scalability, cost, and features. Set up continuous integration and deployment pipelines to streamline updates.</p>
+            
+            <p>After deployment, monitor your application's performance, fix bugs as they arise, and gather user feedback for future improvements. Regular maintenance ensures your application remains secure and up-to-date.</p>
+            
+            <div class="highlight-box">
+              <p><em>Building a web application is a journey of continuous learning and improvement. Start with a clear plan, choose the right tools, and focus on creating value for your users. Remember that every great application began as a simple idea - yours can too.</em></p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+
+     <footer class="footer" id="footer">
+      <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-about">
+          <div class="footer-logo">
+            <h2>KISHOR SHRESTHA</h2>
+          </div>
+          <p>
+            I'm Kishor Shrestha, a full-stack developer with strong
+            communication skills and a people-first mindset.
+          </p>
+
+          <h3>Follow On</h3>
+          <div class="home-detail-icon" style="justify-content: center">
+            <a href="https://www.facebook.com/kishor.stha.144"
+              ><i class="ri-facebook-fill"></i
+            ></a>
+            <a href="https://www.instagram.com/kishor_stha_/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://github.com/keyshor1"
+              ><i class="ri-github-fill"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/kishor-shrestha-089491268"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-links">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>
+              <i class="ri-mail-line"></i>
+              <a href="mailto:kishorshrestha2059@gmail.com"
+                >kishorshrestha2059@gmail.com</a
+              >
+            </li>
+            <li><i class="ri-map-pin-line"></i> Granville, East Street</li>
+            <li>
+              <i class="ri-phone-line"></i> 0412168040
+            </li>
+          </ul>
+        </div>
+
+        <!-- Our Services -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="termsandcondition.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="footer-bottom">
+        <p>© 2025 <span>Kishor Shrestha</span>. All rights reserved.</p>
+        <p>
+          <a href="termsandcondition.html">Terms of Service</a> | Privacy Policy
+        </p>
+      </div>
+    </footer>
+    
+    <!-- js code  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

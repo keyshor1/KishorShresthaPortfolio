@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaquery.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <nav class="nav-container">
+        <div class="top-menu">
+          <div class="nav-info">
+            <div class="nav-contact">
+              <div class="nav-contact-item">
+                <i class="fa fa-phone"></i>
+                <p>Call: 0412-168-040</p>
+              </div>
+              <div class="nav-contact-item">
+                <i class="fa fa-map-marker-alt"></i>
+                <p>Location: 12 East Street Granville, NSW</p>
+              </div>
+            </div>
+            <div class="navbar-light" style="cursor: pointer">
+              <span id="theme-toggle">
+                <i class="ri-sun-fill"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-menu">
+          <h1><a href="index.html">KISHOR SHRESTHA</a></h1>
+          <nav>
+            <ul id="navbar-center">
+              <div id="hidemenu"
+                ><i class="ri-xrp-line" onclick="hideMenu()"></i
+              ></div>
+              <li><a href="about.html">About</a></li>
+              <li class="dropdown">
+                <a href="#">Portfolio</a>
+                <div class="dropdown-content">
+                  <a href="education.html">Education</a>
+                  <a href="experience.html">Experience</a>
+                  <a href="skills.html">Skills</a>
+                  <a href="projects.html">Projects</a>
+                  <a href="resume.html">My Resume</a>
+                </div>
+              </li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div id="showmenu"
+            ><i class="ri-menu-line" onclick="showMenu()"></i
+          ></div>
+        </div>
+      </nav>
+      <div class="banner">
+        <h4 class="heading">Projects</h4>
+        <p>HOME > PROJECTS</p>
+      </div>
+      <div class="portfolio-width">
+        <section class="projects-section">
+          <div class="container">
+
+            <!-- E-commerce & Business Websites -->
+            <div class="category-row">
+              <div class="category-header">
+                <h3>E-commerce & Business Websites</h3>
+                <p>Full-featured online platforms and business solutions</p>
+              </div>
+              <div class="projects-row">
+                <div class="project-item">
+                  <h4>Family Resort</h4>
+                  <p>
+                    Complete resort booking with room reservations and food
+                    delivery system
+                  </p>
+                  <a
+                    href="https://github.com/keyshor1/EcommercerReactDjango/tree/main/Ecommerce"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+                <div class="project-item">
+                  <h4>Food Hunger</h4>
+                  <p>
+                    Food delivery platform with inventory management and order
+                    tracking
+                  </p>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/keyshor1/foodhunger"
+                      target="_blank"
+                      >View Code</a
+                    >
+                  </div>
+                </div>
+                <div class="project-item">
+                  <h4>Seller Platform</h4>
+                  <p>Multi-vendor e-commerce platform for product management</p>
+                  <a
+                    href="https://github.com/keyshor1/Netflix-seler"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Web Applications -->
+            <div class="category-row">
+              <div class="category-header">
+                <h3>Web Applications</h3>
+                <p>Interactive applications with modern user interfaces</p>
+              </div>
+              <div class="projects-row">
+                <div class="project-item">
+                  <h4>Netflix Clone</h4>
+                  <p>Streaming platform replica with modern UI/UX design</p>
+                  <a
+                    href="https://github.com/keyshor1/Netflix-seler"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+                <div class="project-item">
+                  <h4>Note Taking App</h4>
+                  <p>
+                    Modern note application with React and Django REST Framework
+                  </p>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/keyshor1/ReactJSProject"
+                      target="_blank"
+                      >Frontend</a
+                    >
+                    <a
+                      href="https://github.com/keyshor1/ReactDjangoProjects"
+                      target="_blank"
+                      >Backend</a
+                    >
+                  </div>
+                </div>
+                <div class="project-item">
+                  <h4>Donation App</h4>
+                  <p>Secure donation platform with payment integration</p>
+                  <a
+                    href="https://github.com/keyshor1/DonationApp"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Real World Projects -->
+            <div class="category-row">
+              <div class="category-header">
+                <h3>Real World Projects</h3>
+                <p>Live websites built for actual clients and businesses</p>
+              </div>
+              <div class="projects-row">
+                <div class="project-item">
+                  <h4>WriteLion Tech</h4>
+                  <p>
+                    Professional website for tech company with modern design
+                  </p>
+                  <a href="https://www.writeliontech.com/" target="_blank"
+                    >Visit Site</a
+                  >
+                </div>
+                <div class="project-item">
+                  <h4>Grace Work Force</h4>
+                  <p>Recruitment company website with clean interface</p>
+                  <a href="https://graceworkforcelimited.com/" target="_blank"
+                    >Visit Site</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Backend & APIs -->
+            <div class="category-row">
+              <div class="category-header">
+                <h3>Backend & APIs</h3>
+                <p>Server-side applications and RESTful APIs</p>
+              </div>
+              <div class="projects-row">
+                <div class="project-item">
+                  <h4>Authentication API</h4>
+                  <p>
+                    Secure JWT authentication system with email verification
+                  </p>
+                  <a
+                    href="https://github.com/keyshor1/DjangoRestFramework"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+                <div class="project-item">
+                  <h4>Task Management</h4>
+                  <p>Collaborative task management system for teams</p>
+                  <a
+                    href="https://github.com/keyshor1/Excel-Feature/tree/main/Django%20excel%20features/features"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+                <div class="project-item">
+                  <h4>Movie Recommendation</h4>
+                  <p>Intelligent movie suggestion system using ML algorithms</p>
+                  <a
+                    href="https://github.com/keyshor1/CollegeProjects/tree/main/AI/AI/Development"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+     <footer class="footer" id="footer">
+      <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-about">
+          <div class="footer-logo">
+            <h2>KISHOR SHRESTHA</h2>
+          </div>
+          <p>
+            I'm Kishor Shrestha, a full-stack developer with strong
+            communication skills and a people-first mindset.
+          </p>
+
+          <h3>Follow On</h3>
+          <div class="home-detail-icon" style="justify-content: center">
+            <a href="https://www.facebook.com/kishor.stha.144"
+              ><i class="ri-facebook-fill"></i
+            ></a>
+            <a href="https://www.instagram.com/kishor_stha_/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://github.com/keyshor1"
+              ><i class="ri-github-fill"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/kishor-shrestha-089491268"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-links">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>
+              <i class="ri-mail-line"></i>
+              <a href="mailto:kishorshrestha2059@gmail.com"
+                >kishorshrestha2059@gmail.com</a
+              >
+            </li>
+            <li><i class="ri-map-pin-line"></i> Granville, East Street</li>
+            <li>
+              <i class="ri-phone-line"></i> 0412168040
+            </li>
+          </ul>
+        </div>
+
+        <!-- Our Services -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="termsandcondition.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="footer-bottom">
+        <p>© 2025 <span>Kishor Shrestha</span>. All rights reserved.</p>
+        <p>
+          <a href="termsandcondition.html">Terms of Service</a> | Privacy Policy
+        </p>
+      </div>
+    </footer>
+
+    <!-- js code  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
